@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload CSV File</title>
+</head>
+<body>
+    <h1>CSV Upload</h1>
+    <form action="/uploadfile/" method="post" enctype="multipart/form-data">
+        <label for="file">Choose CSV file:</label>
+        <input type="file" id="file" name="file" accept=".csv">
+        <br>
+        <label for="name_column">Name Column:</label>
+        <input type="number" id="name_column" name="name_column" value="0">
+        <br>
+        <label for="age_column">Age Column:</label>
+        <input type="number" id="age_column" name="age_column" value="1">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
